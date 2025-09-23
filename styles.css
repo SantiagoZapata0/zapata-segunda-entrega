@@ -106,13 +106,13 @@ body{
 .header-right{
     display: grid;
     grid-template-columns: repeat(2, auto);
-    column-gap: 1.2rem;
+    column-gap: 2rem;
     list-style: none;
     justify-content: baseline;
 }
 
 .header-right i{
-    font-size: 1.3rem;
+    font-size: 1.6rem;
     text-decoration: none;
     color: #ca2323;
     transition: 0.3s;
@@ -124,6 +124,7 @@ body{
 }
 
 .header-right__items{
+    display: flex;
     text-decoration: none;
     color: #750000;
     font-weight: 800;
@@ -298,14 +299,20 @@ body{
     padding: 1.1rem;
     border-radius: 10px;
     border: none;
-    background-color: #121212;
-    box-shadow: 0px 0px 6px 1px rgb(0, 0, 0.25)
+    background-color: #111;
+    box-shadow: 0px 0px 6px 1px rgb(0, 0, 0.25);
+    transition: 0.3s;
+    cursor: pointer;
 }
 
 .resigns-button a{
     text-decoration: none;
     color: #ca2323;
     font-size: 1.2rem;
+}
+
+.resigns-button:hover{
+    background-color: #171717;
 }
 
 .resigns-title{
@@ -1074,10 +1081,6 @@ footer{
         font-size: 1.2rem;
     }
 
-    .header-right__items{
-        display: none;
-    }
-
     /* Navbar */
 
     .navbar-container{
@@ -1174,9 +1177,13 @@ footer{
     }
 
     .resigns-button{
-        width: 230px;
-        padding: 0.8rem;
+        width: 220px;
+        padding: 0.6rem 0.3rem;
         white-space: nowrap;
+    }
+
+    .resigns-button a{
+        font-size: 1rem;
     }
 
     /* Footer */
@@ -1187,7 +1194,8 @@ footer{
     }
 
     .footer-left a{
-        padding: 0.6rem;
+        padding: 0.6rem 0.8rem;
+        font-size: 1rem;
         white-space: nowrap;
     }
 
