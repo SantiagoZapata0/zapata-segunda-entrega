@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <title>Placas de video - CamGear</title>
+</head>
+<body>
+
+    <!-- Header -->
+
+    <header class="header-container">
+        <div class="header-left__container">
+            <a href="../index.html">
+                <img class="header-left__img" src="../assets/logo.png" alt="logo">
+            </a>
+        </div>
+
+        <div class="header-searchbar__container">
+            <label for="searchbar">
+                <form action="Buscar">
+                    <input class="header-searchbar" type="search" placeholder="Buscar...">
+                    <button class="header-searchbar__button">
+                        <i class="fa-solid fa-search"></i>
+                    </button>
+                </form>
+            </label>
+        </div>
+
+        <div class="header-right__container">
+            <ul class="header-right">
+                <li>
+                    <a class="header-right__items" href="">
+                        <i class="fa-solid fa-user"></i>
+                    </a>
+                </li>
+                <li>
+                    <a class="header-right__items" href="">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Navbar -->
+
+            <nav>
+            <div class="navbar-container">
+                <ul class="navbar">
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="#">Placas de video</a></li>
+                    <li><a href="../pages/arma-tupc.html">Arma tu PC</a></li>
+                    <li><a href="../pages/preguntas-frecuentes.html">Preguntas frecuentes</a></li>
+                    <li><a href="">PCs Armadas</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <section class="placas-de-video__container">
+            <aside class="categories-container">
+                <h2 class="categories-title">Categorias</h2>
+                
+                <ul class="categories-items">
+                    <li><a href="#">Placas de video</a></li>
+                    <li><a href="">Microprocesadores</a></li>
+                    <li><a href="">Almacenamiento</a></li>
+                    <li><a href="">Memorias RAM</a></li>
+                    <li><a href="">Motherboards</a></li>
+                    <li><a href="">Fuentes de alimentacion</a></li>
+                    <li><a href="">Monitores</a></li>
+                    <li><a href="">Perifericos</a></li>
+                    <li><a href="">Consolas</a></li>
+                    <li><a href="">Gabinetes</a></li>
+                </ul>
+
+            <div class="filtros">
+                <h3>Filtrar por</h3>
+                <div class="filtro-grupo">
+                    <h4>Marca</h4>
+                    <label><input type="checkbox"> Asus</label>
+                    <label><input type="checkbox"> MSI</label>
+                    <label><input type="checkbox"> ZOTAC</label>
+                    <label><input type="checkbox"> Gygabite</label>
+                    <label><input type="checkbox"> PNY</label>
+                </div>
+
+                <div class="filtro-grupo">
+                    <h4>Chipset GPU</h4>
+                    <label><input type="checkbox"> RTX 3050</label>
+                    <label><input type="checkbox"> RTX 3060</label>
+                    <label><input type="checkbox"> RTX 3080</label>
+                    <label><input type="checkbox"> RTX 4060</label>
+                    <label><input type="checkbox"> RTX 5060</label>
+                </div>
+
+                <div class="filtro-grupo">
+                    <h4>Coolers Fan</h4>
+                    <label><input type="checkbox"> 2</label>
+                    <label><input type="checkbox"> 3</label>
+                    <label><input type="checkbox"> 4</label>
+                </div>
+
+                <div class="filtro-grupo">
+                    <h4>Capacidad de memoria</h4>
+                    <label><input type="checkbox"> 6gb</label>
+                    <label><input type="checkbox"> 8gb</label>
+                    <label><input type="checkbox"> 12gb</label>
+                    <label><input type="checkbox"> 16gb</label>
+                    <label><input type="checkbox"> 32gb</label>
+                </div>
+
+                <div class="filtro-grupo">
+                    <h4>Tipo de memoria</h4>
+                    <label><input type="checkbox"> GDDR6</label>
+                    <label><input type="checkbox"> GDDR7</label>
+                </div>
+            </div>
+</aside>
+
+            <div class="articles-container__main">
+
+                <h2 class="articles-container__main-title">Placas de video</h2>
+
+                <label for="ordenar" class="order-for">Ordenar por</label>
+                <select name="ordenar" id="ordenar" class="order-for__select" aria-placeholder="">
+                    <option value="nuevo">Mas reciente</option>
+                    <option value="antiguo">Mas antiguo</option>
+                    <option value="precio-asc">Precio: menor a mayor</option>
+                    <option value="precio-desc">Precio: mayor a menor</option>
+                    <option value="mas-vendido">Mas vendido</option>
+                </select>
+
+                <a href="../pages/buy-section.html" class="articles-buy-link">
+                    <article class="articles-container">
+                            <img class="articles-img" src="../assets/RTX 3060.jpg" alt="rtx3060">
+                            <h2 class="articles-name">PLACA DE VIDEO GeForce RTX 3060 12GB MSI VENTUS 2X OC</h2>
+                            <h3 class="articles-price__original">$395,999</h3>
+                            <h3 class="articles-price__discont">$359,000</h3>
+                    </article>
+                </a>
+
+                <a href="../pages/buy-section.html" class="articles-buy-link">
+                    <article class="articles-container">
+                            <img class="articles-img" src="../assets/RTX 3060.jpg" alt="rtx3060">
+                            <h2 class="articles-name">PLACA DE VIDEO GeForce RTX 3060 12GB MSI VENTUS 2X OC</h2>
+                            <h3 class="articles-price__original">$395,999</h3>
+                            <h3 class="articles-price__discont">$359,000</h3>
+                    </article>
+                </a>
+                
+                <a href="../pages/buy-section.html" class="articles-buy-link">
+                    <article class="articles-container">
+                            <img class="articles-img" src="../assets/RTX 3060.jpg" alt="rtx3060">
+                            <h2 class="articles-name">PLACA DE VIDEO GeForce RTX 3060 12GB MSI VENTUS 2X OC</h2>
+                            <h3 class="articles-price__original">$395,999</h3>
+                            <h3 class="articles-price__discont">$359,000</h3>
+                    </article>
+                </a>
+
+                <a href="../pages/buy-section.html" class="articles-buy-link">
+                    <article class="articles-container">
+                            <img class="articles-img" src="../assets/RTX 3060.jpg" alt="rtx3060">
+                            <h2 class="articles-name">PLACA DE VIDEO GeForce RTX 3060 12GB MSI VENTUS 2X OC</h2>
+                            <h3 class="articles-price__original">$395,999</h3>
+                            <h3 class="articles-price__discont">$359,000</h3>
+                    </article>
+                </a>
+
+                <a href="../pages/buy-section.html" class="articles-buy-link">
+                    <article class="articles-container">
+                            <img class="articles-img" src="../assets/RTX 3060.jpg" alt="rtx3060">
+                            <h2 class="articles-name">PLACA DE VIDEO GeForce RTX 3060 12GB MSI VENTUS 2X OC</h2>
+                            <h3 class="articles-price__original">$395,999</h3>
+                            <h3 class="articles-price__discont">$359,000</h3>
+                    </article>
+                </a>
+
+                <a href="../pages/buy-section.html" class="articles-buy-link">
+                    <article class="articles-container">
+                            <img class="articles-img" src="../assets/RTX 3060.jpg" alt="rtx3060">
+                            <h2 class="articles-name">PLACA DE VIDEO GeForce RTX 3060 12GB MSI VENTUS 2X OC</h2>
+                            <h3 class="articles-price__original">$395,999</h3>
+                            <h3 class="articles-price__discont">$359,000</h3>
+                    </article>
+                </a>
+
+                <a href="../pages/buy-section.html" class="articles-buy-link">
+                    <article class="articles-container">
+                            <img class="articles-img" src="../assets/RTX 3060.jpg" alt="rtx3060">
+                            <h2 class="articles-name">PLACA DE VIDEO GeForce RTX 3060 12GB MSI VENTUS 2X OC</h2>
+                            <h3 class="articles-price__original">$395,999</h3>
+                            <h3 class="articles-price__discont">$359,000</h3>
+                    </article>
+                </a>
+
+                <a href="../pages/buy-section.html" class="articles-buy-link">
+                    <article class="articles-container">
+                            <img class="articles-img" src="../assets/RTX 3060.jpg" alt="rtx3060">
+                            <h2 class="articles-name">PLACA DE VIDEO GeForce RTX 3060 12GB MSI VENTUS 2X OC</h2>
+                            <h3 class="articles-price__original">$395,999</h3>
+                            <h3 class="articles-price__discont">$359,000</h3>
+                    </article>
+                </a>
+
+                <a href="../pages/buy-section.html" class="articles-buy-link">
+                    <article class="articles-container">
+                            <img class="articles-img" src="../assets/RTX 3060.jpg" alt="rtx3060">
+                            <h2 class="articles-name">PLACA DE VIDEO GeForce RTX 3060 12GB MSI VENTUS 2X OC</h2>
+                            <h3 class="articles-price__original">$395,999</h3>
+                            <h3 class="articles-price__discont">$359,000</h3>
+                    </article>
+                </a>
+
+                <a href="../pages/buy-section.html" class="articles-buy-link">
+                    <article class="articles-container">
+                            <img class="articles-img" src="../assets/RTX 3060.jpg" alt="rtx3060">
+                            <h2 class="articles-name">PLACA DE VIDEO GeForce RTX 3060 12GB MSI VENTUS 2X OC</h2>
+                            <h3 class="articles-price__original">$395,999</h3>
+                            <h3 class="articles-price__discont">$359,000</h3>
+                    </article>
+                </a>
+
+                <a href="../pages/buy-section.html" class="articles-buy-link">
+                    <article class="articles-container">
+                            <img class="articles-img" src="../assets/RTX 3060.jpg" alt="rtx3060">
+                            <h2 class="articles-name">PLACA DE VIDEO GeForce RTX 3060 12GB MSI VENTUS 2X OC</h2>
+                            <h3 class="articles-price__original">$395,999</h3>
+                            <h3 class="articles-price__discont">$359,000</h3>
+                    </article>
+                </a>
+
+                <a href="../pages/buy-section.html" class="articles-buy-link">
+                    <article class="articles-container">
+                            <img class="articles-img" src="../assets/RTX 3060.jpg" alt="rtx3060">
+                            <h2 class="articles-name">PLACA DE VIDEO GeForce RTX 3060 12GB MSI VENTUS 2X OC</h2>
+                            <h3 class="articles-price__original">$395,999</h3>
+                            <h3 class="articles-price__discont">$359,000</h3>
+                    </article>
+                </a>
+            </div>
+        </section>
+
+        <!-- Footer -->
+
+    <footer>
+        <div class="footer-left__container">
+            <ul class="footer-left">
+                <li><a href="pages/preguntas-frecuentes.html">Preguntas frecuentes</a></li>
+                <li><a href="">Terminos y condiciones</a></li>
+                <li><a href="">Informacion de contacto</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-right__container">
+            <a href="">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="">
+                <i class="fa-brands fa-youtube"></i>
+            </a>
+            <a href="">
+                <i class="fa-brands fa-x-twitter"></i>
+            </a>
+            <a href="">
+                <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a href="">
+                <i class="fa-brands fa-discord"></i>
+            </a>
+        </div>
+        <div class="footer-right__container__btn-arrepentimiento">
+            <a href="">Boton de arrepentimiento</a>
+        </div>
+        <div class="footer-copyright">
+            <h2 class="footer-copyright__content">© 2025 CamGear. Todos los derechos reservados.</h2>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <title>Arma tu PC</title>
+</head>
+<body>
+
+    <!-- Header -->
+
+    <header class="header-container">
+        <div class="header-left__container">
+            <a href="../index.html">
+                <img class="header-left__img" src="../assets/logo.png" alt="logo">
+            </a>
+        </div>
+
+        <div class="header-searchbar__container">
+            <label for="searchbar">
+                <form action="Buscar">
+                    <input class="header-searchbar" type="search" placeholder="Buscar...">
+                    <button class="header-searchbar__button">
+                        <i class="fa-solid fa-search"></i>
+                    </button>
+                </form>
+            </label>
+        </div>
+
+        <div class="header-right__container">
+            <ul class="header-right">
+                <li>
+                    <a class="header-right__items" href="">
+                        <i class="fa-solid fa-user"></i>
+                    </a>
+                </li>
+                <li>
+                    <a class="header-right__items" href="">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Navbar -->
+
+        <nav>
+            <div class="navbar-container">
+                <ul class="navbar">
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="../pages/placas-de-video.html">Placas de video</a></li>
+                    <li><a href="#">Arma tu PC</a></li>
+                    <li><a href="../pages/preguntas-frecuentes.html">Preguntas frecuentes</a></li>
+                    <li><a href="../pages/pcs-armadas.html">PCs Armadas</a></li>
+                </ul>
+            </div>
+        </nav>
+
+    <main class="armatupc-main">
+        <section class="armatupc-section">
+            <aside class="armatupc-sidebar">
+
+                <div class="armatupc-item">
+                    <img class="armatupc-icons" src="../assets/microprocesador.png" alt="microprocesador">
+                    <h3 class="armatupc-name">Microprocesador</h3>
+                </div>
+
+                <div class="armatupc-item">
+                    <img class="armatupc-icons" src="../assets/motherboard.png" alt="motherboard">
+                    <h3 class="armatupc-name">Motherboard</h3>
+                </div>
+
+                <div class="armatupc-item">
+                    <img class="armatupc-icons" src="../assets/cooler.png" alt="coolerfan">
+                    <h3 class="armatupc-name">Coolerfan</h3>
+                </div>
+
+                <div class="armatupc-item">
+                    <img class="armatupc-icons" src="../assets/ram.png" alt="memoriaram">
+                    <h3 class="armatupc-name">Memoria RAM</h3>
+                </div>
+
+                <div class="armatupc-item">
+                    <img class="armatupc-icons" src="../assets/gpu.png" alt="gpu">
+                    <h3 class="armatupc-name">Placa de video</h3>
+                </div>
+
+                <div class="armatupc-item">
+                    <img class="armatupc-icons1" src="../assets/almacenamiento.png" alt="almacenamiento">
+                    <h3 class="armatupc-name">Almacenamiento</h3>
+                </div>
+
+                <div class="armatupc-item">
+                    <img class="armatupc-icons" src="../assets/fuente.png" alt="fuente">
+                    <h3 class="armatupc-name">Fuente</h3>
+                </div>
+
+                <div class="armatupc-item">
+                    <img class="armatupc-icons2" src="../assets/gabinete.png" alt="gabinete">
+                    <h3 class="armatupc-name">Gabinete</h3>
+                </div>
+
+                <div class="armatupc-item">
+                    <img class="armatupc-icons3" src="../assets/monitor.png" alt="monitor">
+                    <h3 class="armatupc-name">Monitor</h3>
+                </div>
+
+                <div class="armatupc-item">
+                    <img class="armatupc-icons" src="../assets/perifericos.png" alt="perifericos">
+                    <h3 class="armatupc-name">Perifericos</h3>
+                </div>
+
+            <div class="armatupc-data">
+                <h3 class="armatupc-data__item">65 watts</h3>
+                <h3 class="armatupc-data__item">Total: $250,000</h3>
+                <button class="armatupc-data__button">
+                    <i class="fa-solid fa-arrow-left"></i>
+                    Anterior
+                </button>
+                <button class="armatupc-data__button">
+                    Siguiente
+                    <i class="fa-solid fa-arrow-right"></i>
+                </button>
+            </div>
+
+                
+            </aside>
+
+            <div class="articles-container__main2">
+
+                <h2 class="articles-container__main-title">Microprocesadores</h2>
+
+                <label for="ordenar" class="order-for2">Ordenar por</label>
+                <select name="ordenar" id="ordenar" class="order-for__select2" aria-placeholder="">
+                    <option value="nuevo">Mas reciente</option>
+                    <option value="antiguo">Mas antiguo</option>
+                    <option value="precio-asc">Precio: menor a mayor</option>
+                    <option value="precio-desc">Precio: mayor a menor</option>
+                    <option value="mas-vendido">Mas vendido</option>
+                </select>
+
+                <article class="articles-container articles-container2">
+                    <img class="articles-img articles-img2" src="../assets/intelcorei5.png" alt="rtx3060">
+                    <h2 class="articles-name articles-name2">Intel Core i5 12400 4.4GHz Turbo Socket 1700 Alder Lake </h2>
+                    <h3 class="articles-price__original articles-price__original2">$265,000</h3>
+                    <h3 class="articles-price__discont articles-price__discont2">$250,000</h3>
+                </article>
+
+                <article class="articles-container articles-container2">
+                    <img class="articles-img articles-img2" src="../assets/intelcorei5.png" alt="rtx3060">
+                    <h2 class="articles-name articles-name2">Intel Core i5 12400 4.4GHz Turbo Socket 1700 Alder Lake </h2>
+                    <h3 class="articles-price__original articles-price__original2">$265,000</h3>
+                    <h3 class="articles-price__discont articles-price__discont2">$250,000</h3>
+                </article>
+
+                <article class="articles-container articles-container2">
+                    <img class="articles-img articles-img2" src="../assets/intelcorei5.png" alt="rtx3060">
+                    <h2 class="articles-name articles-name2">Intel Core i5 12400 4.4GHz Turbo Socket 1700 Alder Lake </h2>
+                    <h3 class="articles-price__original articles-price__original2">$265,000</h3>
+                    <h3 class="articles-price__discont articles-price__discont2">$250,000</h3>
+                </article>
+
+                <article class="articles-container articles-container2">
+                    <img class="articles-img articles-img2" src="../assets/intelcorei5.png" alt="rtx3060">
+                    <h2 class="articles-name articles-name2">Intel Core i5 12400 4.4GHz Turbo Socket 1700 Alder Lake </h2>
+                    <h3 class="articles-price__original articles-price__original2">$265,000</h3>
+                    <h3 class="articles-price__discont articles-price__discont2">$250,000</h3>
+                </article>
+
+                <article class="articles-container articles-container2">
+                    <img class="articles-img articles-img2" src="../assets/intelcorei5.png" alt="rtx3060">
+                    <h2 class="articles-name articles-name2">Intel Core i5 12400 4.4GHz Turbo Socket 1700 Alder Lake </h2>
+                    <h3 class="articles-price__original articles-price__original2">$265,000</h3>
+                    <h3 class="articles-price__discont articles-price__discont2">$250,000</h3>
+                </article>
+
+                <article class="articles-container articles-container2">
+                    <img class="articles-img articles-img2" src="../assets/intelcorei5.png" alt="rtx3060">
+                    <h2 class="articles-name articles-name2">Intel Core i5 12400 4.4GHz Turbo Socket 1700 Alder Lake </h2>
+                    <h3 class="articles-price__original articles-price__original2">$265,000</h3>
+                    <h3 class="articles-price__discont articles-price__discont2">$250,000</h3>
+                </article>
+
+                <article class="articles-container articles-container2">
+                    <img class="articles-img articles-img2" src="../assets/intelcorei5.png" alt="rtx3060">
+                    <h2 class="articles-name articles-name2">Intel Core i5 12400 4.4GHz Turbo Socket 1700 Alder Lake </h2>
+                    <h3 class="articles-price__original articles-price__original2">$265,000</h3>
+                    <h3 class="articles-price__discont articles-price__discont2">$250,000</h3>
+                </article>
+
+                <article class="articles-container articles-container2">
+                    <img class="articles-img articles-img2" src="../assets/intelcorei5.png" alt="rtx3060">
+                    <h2 class="articles-name articles-name2">Intel Core i5 12400 4.4GHz Turbo Socket 1700 Alder Lake </h2>
+                    <h3 class="articles-price__original articles-price__original2">$265,000</h3>
+                    <h3 class="articles-price__discont articles-price__discont2">$250,000</h3>
+                </article>
+
+                <article class="articles-container articles-container2">
+                    <img class="articles-img articles-img2" src="../assets/intelcorei5.png" alt="rtx3060">
+                    <h2 class="articles-name articles-name2">Intel Core i5 12400 4.4GHz Turbo Socket 1700 Alder Lake </h2>
+                    <h3 class="articles-price__original articles-price__original2">$265,000</h3>
+                    <h3 class="articles-price__discont articles-price__discont2">$250,000</h3>
+                </article>
+
+                <article class="articles-container articles-container2">
+                    <img class="articles-img articles-img2" src="../assets/intelcorei5.png" alt="rtx3060">
+                    <h2 class="articles-name articles-name2">Intel Core i5 12400 4.4GHz Turbo Socket 1700 Alder Lake </h2>
+                    <h3 class="articles-price__original articles-price__original2">$265,000</h3>
+                    <h3 class="articles-price__discont articles-price__discont2">$250,000</h3>
+                </article>
+
+                <article class="articles-container articles-container2">
+                    <img class="articles-img articles-img2" src="../assets/intelcorei5.png" alt="rtx3060">
+                    <h2 class="articles-name articles-name2">Intel Core i5 12400 4.4GHz Turbo Socket 1700 Alder Lake </h2>
+                    <h3 class="articles-price__original articles-price__original2">$265,000</h3>
+                    <h3 class="articles-price__discont articles-price__discont2">$250,000</h3>
+                </article>
+
+                <article class="articles-container articles-container2">
+                    <img class="articles-img articles-img2" src="../assets/intelcorei5.png" alt="rtx3060">
+                    <h2 class="articles-name articles-name2">Intel Core i5 12400 4.4GHz Turbo Socket 1700 Alder Lake </h2>
+                    <h3 class="articles-price__original articles-price__original2">$265,000</h3>
+                    <h3 class="articles-price__discont articles-price__discont2">$250,000</h3>
+                </article>
+
+
+            </div>
+        </section>
+        </section>
+
+    </main>
+
+
+
+
+
+
+        <!-- Footer -->
+
+    <footer>
+        <div class="footer-left__container">
+            <ul class="footer-left">
+                <li><a href="pages/preguntas-frecuentes.html">Preguntas frecuentes</a></li>
+                <li><a href="">Terminos y condiciones</a></li>
+                <li><a href="">Informacion de contacto</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-right__container">
+            <a href="">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="">
+                <i class="fa-brands fa-youtube"></i>
+            </a>
+            <a href="">
+                <i class="fa-brands fa-x-twitter"></i>
+            </a>
+            <a href="">
+                <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a href="">
+                <i class="fa-brands fa-discord"></i>
+            </a>
+        </div>
+        <div class="footer-right__container__btn-arrepentimiento">
+            <a href="">Boton de arrepentimiento</a>
+        </div>
+        <div class="footer-copyright">
+            <h2 class="footer-copyright__content">© 2025 CamGear. Todos los derechos reservados.</h2>
+        </div>
+    </footer>
+</body>
+</html>
