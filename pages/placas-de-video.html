@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <title>Placas de video - CamGear</title>
 </head>
@@ -47,18 +47,20 @@
 
     <!-- Navbar -->
 
-            <nav>
+        <nav>
             <div class="navbar-container">
                 <ul class="navbar">
                     <li><a href="../index.html">Inicio</a></li>
                     <li><a href="#">Placas de video</a></li>
-                    <li><a href="../pages/arma-tupc.html">Arma tu PC</a></li>
-                    <li><a href="../pages/preguntas-frecuentes.html">Preguntas frecuentes</a></li>
-                    <li><a href="">PCs Armadas</a></li>
+                    <li><a href="arma-tupc.html">Arma tu PC</a></li>
+                    <li><a href="preguntas-frecuentes.html">Preguntas frecuentes</a></li>
+                    <li><a href="pcs-armadas.html">PCs Armadas</a></li>
                 </ul>
             </div>
         </nav>
 
+
+    <main>
         <section class="placas-de-video__container">
             <aside class="categories-container">
                 <h2 class="categories-title">Categorias</h2>
@@ -76,53 +78,53 @@
                     <li><a href="">Gabinetes</a></li>
                 </ul>
 
-            <div class="filtros">
-                <h3>Filtrar por</h3>
-                <div class="filtro-grupo">
-                    <h4>Marca</h4>
-                    <label><input type="checkbox"> Asus</label>
-                    <label><input type="checkbox"> MSI</label>
-                    <label><input type="checkbox"> ZOTAC</label>
-                    <label><input type="checkbox"> Gygabite</label>
-                    <label><input type="checkbox"> PNY</label>
-                </div>
+                <div class="filtros">
+                    <h3>Filtrar por</h3>
+                    <div class="filtro-grupo">
+                        <h4>Marca</h4>
+                        <label><input type="checkbox"> Asus</label>
+                        <label><input type="checkbox"> MSI</label>
+                        <label><input type="checkbox"> ZOTAC</label>
+                        <label><input type="checkbox"> Gygabite</label>
+                        <label><input type="checkbox"> PNY</label>
+                    </div>
 
-                <div class="filtro-grupo">
-                    <h4>Chipset GPU</h4>
-                    <label><input type="checkbox"> RTX 3050</label>
-                    <label><input type="checkbox"> RTX 3060</label>
-                    <label><input type="checkbox"> RTX 3080</label>
-                    <label><input type="checkbox"> RTX 4060</label>
-                    <label><input type="checkbox"> RTX 5060</label>
-                </div>
+                    <div class="filtro-grupo">
+                        <h4>Chipset GPU</h4>
+                        <label><input type="checkbox"> RTX 3050</label>
+                        <label><input type="checkbox"> RTX 3060</label>
+                        <label><input type="checkbox"> RTX 3080</label>
+                        <label><input type="checkbox"> RTX 4060</label>
+                        <label><input type="checkbox"> RTX 5060</label>
+                    </div>
 
-                <div class="filtro-grupo">
-                    <h4>Coolers Fan</h4>
-                    <label><input type="checkbox"> 2</label>
-                    <label><input type="checkbox"> 3</label>
-                    <label><input type="checkbox"> 4</label>
-                </div>
+                    <div class="filtro-grupo">
+                        <h4>Coolers Fan</h4>
+                        <label><input type="checkbox"> 2</label>
+                        <label><input type="checkbox"> 3</label>
+                        <label><input type="checkbox"> 4</label>
+                    </div>
 
-                <div class="filtro-grupo">
-                    <h4>Capacidad de memoria</h4>
-                    <label><input type="checkbox"> 6gb</label>
-                    <label><input type="checkbox"> 8gb</label>
-                    <label><input type="checkbox"> 12gb</label>
-                    <label><input type="checkbox"> 16gb</label>
-                    <label><input type="checkbox"> 32gb</label>
-                </div>
+                    <div class="filtro-grupo">
+                        <h4>Capacidad de memoria</h4>
+                        <label><input type="checkbox"> 6gb</label>
+                        <label><input type="checkbox"> 8gb</label>
+                        <label><input type="checkbox"> 12gb</label>
+                        <label><input type="checkbox"> 16gb</label>
+                        <label><input type="checkbox"> 32gb</label>
+                    </div>
 
-                <div class="filtro-grupo">
-                    <h4>Tipo de memoria</h4>
-                    <label><input type="checkbox"> GDDR6</label>
-                    <label><input type="checkbox"> GDDR7</label>
+                    <div class="filtro-grupo">
+                        <h4>Tipo de memoria</h4>
+                        <label><input type="checkbox"> GDDR6</label>
+                        <label><input type="checkbox"> GDDR7</label>
+                    </div>
                 </div>
-            </div>
-</aside>
+            </aside>
 
             <div class="articles-container__main">
 
-                <h2 class="articles-container__main-title">Placas de video</h2>
+                <h1 class="articles-container__main-title">Placas de video</h1>
 
                 <label for="ordenar" class="order-for">Ordenar por</label>
                 <select name="ordenar" id="ordenar" class="order-for__select" aria-placeholder="">
@@ -242,6 +244,7 @@
                 </a>
             </div>
         </section>
+    </main>
 
         <!-- Footer -->
 

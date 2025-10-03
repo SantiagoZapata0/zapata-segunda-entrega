@@ -1,0 +1,9 @@
+/* Reseteo del CSS. */
+@use "../utilities/mixin" as*;
+@use "../utilities/variables" as *;
+
+*{
+    @include box-model(0,0,0);
+    box-sizing: border-box;
+    font-family: Montserrat;
+}
