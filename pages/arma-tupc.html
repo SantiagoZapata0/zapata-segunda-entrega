@@ -60,11 +60,20 @@
         </nav>
 
     <main class="armatupc-main">
-        <section class="armatupc-section">
+        <section class="armatupc">
 
             <h1 class="armatupc-main__title">Arma tu PC</h1>
 
+            <label for="sidebar-toggle" class="sidebar-toggle-label">
+                <i class="fa-solid fa-bars"></i> Ver componentes
+            </label>
+            <input type="checkbox" id="sidebar-toggle" class="sidebar-checkbox">
+
             <aside class="armatupc-sidebar">
+
+                <label for="sidebar-toggle" class="sidebar-close-btn" aria-label="Cerrar menú">
+                    <i class="fa-solid fa-xmark"></i> Cerrar
+                </label>
 
                 <div class="armatupc-item">
                     <img class="armatupc-icons" src="../assets/microprocesador.png" alt="microprocesador">
@@ -128,9 +137,9 @@
                     <i class="fa-solid fa-arrow-right"></i>
                 </button>
             </div>
-
-                
             </aside>
+
+            <label for="sidebar-toggle" class="overlay"></label>
 
             <div class="articles-container__main2">
 
@@ -228,8 +237,6 @@
                     <h3 class="articles-price__original articles-price__original2">$265,000</h3>
                     <h3 class="articles-price__discont articles-price__discont2">$250,000</h3>
                 </article>
-
-
             </div>
         </section>
         </section>
@@ -246,7 +253,7 @@
     <footer>
         <div class="footer-left__container">
             <ul class="footer-left">
-                <li><a href="pages/preguntas-frecuentes.html">Preguntas frecuentes</a></li>
+                <li><a href="../pages/preguntas-frecuentes.html">Preguntas frecuentes</a></li>
                 <li><a href="">Terminos y condiciones</a></li>
                 <li><a href="">Informacion de contacto</a></li>
             </ul>

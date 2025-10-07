@@ -1,0 +1,202 @@
+//Imports.
+@use "../utilities/variables" as *;
+@use "../utilities/mixin" as *;
+
+/* Seccion de Preguntas frecuentes. */
+
+.faq-main{
+    @include grid (grid, auto, auto, 0);
+    justify-self: center;
+    background-color: $boxes-color;
+    @include box-model(1.5rem 0 0 0, 2.2rem, none);
+    width: 1350px;
+    color: #fff;
+    border-radius: 1rem;
+    box-shadow: 1px 1px 6px 1px rgb(0, 0, 0.25);
+}
+
+.faq-top{
+    @include flex (flex, column, start, 0);
+
+    &__title{
+        color: $main-color;
+        @include font-style(2.5rem, $font-3rd);
+        margin-bottom: 1.5rem;
+    }
+
+    &__subtitle{
+        @include font-style(1.5rem, $font-5th);
+        margin-bottom: 1.5rem;
+    }
+}
+
+.faq-questions-answers{
+    @include grid (grid, auto, auto, 1.2rem 0);
+    font-size: 1.2rem;
+    list-style: none;
+    
+    li{
+        @include font-style(1.3rem, $font-4th);
+        margin-left: 1rem;
+    }
+
+    p{
+        @include font-style (1.2rem, $font-5th);
+        margin-top: 0.25rem;
+    }
+
+    i{
+        font-size: 1.5rem;
+        color: $main-color;
+    }
+}
+
+/* Formulario de consultas. */
+
+.faq-form{
+    @include medidas (1350px, auto);
+    color: #fff;
+    background-color: $boxes-color;
+    @include flex (flex, column, center, 0);
+    @include box-model(2.5rem 0 0 0, 2.2rem, none);
+    border-radius: 1rem;
+    box-shadow: 1px 1px 6px 1px rgb(0, 0, 0.25);
+    white-space: nowrap;
+    justify-self: center;
+
+    &__title{
+        @include font-style(1.5rem, $font-4th);
+    }
+
+    &__container{
+        @include grid (grid, auto, repeat(3, auto), 0);
+    }
+
+    &__email{
+        color: #fff;
+        @include medidas (800px, 2.5rem);
+        border-radius: 1rem;
+        @include box-model(1rem 0 0 0, 0.5rem, none);
+        background: transparent;
+        box-shadow: 1px 1px 6px 1px rgb(0, 0, 0.25);
+    }
+
+    &__consult{
+        @include medidas (800px, 10rem);
+        border-radius: 1rem;
+        @include box-model(1rem 0 0 0, 0.5rem, none);
+        background: transparent;
+        color: #fff;
+        box-shadow: 1px 1px 6px 1px rgb(0, 0, 0.25);
+        resize: none;
+        
+        &::placeholder{
+            color: #888;
+            font-style: italic;
+        }
+    }
+
+    &__button{
+        @include medidas(100px, auto);
+        @include box-model(1rem 0 0 0, 0.5rem, none);
+        @include font-style(1em, $font-4th);
+        color: #fff;
+        background-color: $main-color;
+        box-shadow: 0 0 6px 1px rgb(0, 0, 0.25);
+        border-radius: 0.5rem;
+        cursor: pointer;
+        transition: 0.3s;
+
+        &:hover{
+            background-color: #750000;
+        }
+    }
+}
+
+@media (min-width:430px) and (max-width:750px){
+
+    .faq-main{
+        width: 350px;
+    }
+
+    .faq-top{
+        font-size: 0.1rem;
+
+        &__title{
+            font-size: 1.5rem;
+            text-align: center;
+        }
+
+        .faq-questions-answers i{
+            font-size: 1.1rem;
+        }
+
+        .faq-questions-answers li{
+            font-size: 1.1rem;
+        }
+
+        .faq-questions-answers p{
+            font-size: 1rem;
+        }
+    }
+
+    .faq-form{
+        width: 350px;
+
+        &__title{
+            font-size: 1rem;
+            white-space: wrap;
+        }
+
+        &__email{
+            width: 95%;
+        }
+
+        &__consult{
+            width: 95%;
+        }
+    }
+}
+
+@media (min-width:750px) and (max-width:1350px){
+    .faq-main{
+        width: 700px;
+    }
+
+    .faq-top{
+        font-size: 0.1rem;
+
+        &__title{
+            font-size: 1.5rem;
+        }
+
+        .faq-questions-answers i{
+            font-size: 1.1rem;
+        }
+
+        .faq-questions-answers li{
+            font-size: 1.1rem;
+        }
+
+        .faq-questions-answers p{
+            font-size: 1rem;
+        }
+    }
+
+    .faq-form{
+        width: 700px;
+
+        &__title{
+            font-size: 1rem;
+            white-space: wrap;
+        }
+
+        &__email{
+            width: 100%;
+        }
+
+        &__consult{
+            width: 100%;
+        }
+    }
+}

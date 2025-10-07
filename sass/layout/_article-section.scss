@@ -1,0 +1,371 @@
+//Imports.
+@use "../utilities/variables" as *;
+@use "../utilities/mixin" as *;
+
+/* Seccion de compra. */
+
+/* Main container. */
+
+.buy-container{
+    @include grid (grid, repeat(3, 1fr), auto, 0 1.5rem);
+    @include medidas (1250px, auto);
+    @include box-model(2rem 0 0 0, 1.5rem, none);
+    justify-self: center;
+    background-color: $boxes-color;
+    border-radius: 1rem;
+    box-shadow: 1px 0.5px 6px 1px rgb(0, 0, 0.25);
+}
+
+/* Top images. */
+
+.buy-images{
+    @include grid(grid, repeat(4, auto), auto, 0.9rem);
+
+    &__main{
+        width: 450px;
+        grid-column: 1/-1;
+        border-radius: 1rem;
+    }
+
+    &__secondary{
+        width: 140px;
+        border-radius: 1rem;
+    }
+}
+
+/* Info. */
+
+.buy-info{
+    display: grid;
+    gap: 0.5rem;
+    color: #ededed;
+    margin: 1rem;
+
+    &__title-top{
+        @include font-style(1.2rem, $font-5th);
+        color: #ededed;
+
+        a{
+            text-decoration: none;
+            color: #ededed;
+            transition: 0.3s;
+        }
+
+        a:hover{
+            color: #ab9f9f;
+        }
+    }
+
+    &__title{
+        @include font-style(2.5rem, $font-3rd);
+        width: 500px;
+    }
+
+    &__price{
+        color: #750000;
+        text-decoration: line-through;
+        @include font-style(1.8rem, $font-4th);
+    }
+
+    &__price-discont{
+        color: #ededed;
+        @include font-style(2rem, $font-4th);
+    }
+
+    &__cuotes{
+        color: #afa9a9;
+        border-bottom: 1px solid #ad2d2d;
+        padding-bottom: 1rem;
+        font-weight: $font-4th;
+
+        i{
+            color: rgb(233, 90, 38);
+            margin-right: 0.2rem
+        }
+    }
+
+    &__view-cuotes{
+        @include font-style(0.8rem, $font-4th);
+        color: $main-color;
+        cursor: pointer;
+        margin-left: 0.2rem;
+        transition: 0.3s;
+    }
+
+    &__view-cuotes:hover{
+        color: #750000;
+    }
+
+    &__stock{
+        color: #ededed;
+        margin: 1rem 0 0.4rem 0;
+        font-weight: $font-4th;
+
+        i{
+            color: #00ff00;
+        }
+    }
+
+    &__guarantee{
+        color: #ededed;
+        margin: 0 0 0.4rem 0;
+        font-weight: $font-4th;
+
+        i{
+            color: cyan;
+        }
+    }
+
+    &__shipping{
+        color: #ededed;
+        border-bottom: 1px solid #ad2d2d;
+        padding-bottom: 1rem;
+        font-weight: $font-4th;
+
+        i{
+            color: cornflowerblue;
+        }
+    }
+
+    &__button{
+        @include box-model(1rem 0 0 0, 0.6rem, none);
+        @include font-style(1.1rem, $font-3rd);
+        @include medidas (12rem, auto);
+        color: #fff;
+        background-color: $main-color;
+        border-radius: 0.8rem;
+        cursor: pointer;
+        box-shadow: 1px 1px 7px 1px rgb(0, 0, 0.15);
+
+        &:hover{
+            background-color: #750000;
+            transition: 0.3s;
+        }
+    }
+}
+
+/* Especificaciones. */
+
+.especs-container{
+    @include grid(grid,repeat(2, auto), repeat(4, auto), 1.5rem);
+    width: 1250px;
+    justify-self: center;
+}
+
+.especs-main-title{
+    grid-column: 1/-1;
+    margin: 1.5rem 0 0.5rem 0;
+    color: #ededed;
+    font-weight: $font-3rd;
+}
+
+.especs-title{
+    color: $main-color;
+    margin-bottom: 0.5rem;
+    font-weight: $font-3rd;
+}
+
+.especs-info{
+    background-color: $boxes-color;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    box-shadow: 1px 0.5px 6px 1px rgb(0, 0, 0.25);
+    font-weight: $font-5th;
+
+    &3{
+        background-color: $boxes-color;
+        grid-column: 1/-1;
+        padding: 1.5rem;
+        border-radius: 1rem;
+        box-shadow: 1px 0.5px 6px 1px rgb(0, 0, 0.25);
+        font-weight: $font-5th;
+        
+    }
+
+    &4{
+        background-color: $boxes-color;
+        grid-column: 1/-1;
+        padding: 1.5rem;
+        border-radius: 1rem;
+        box-shadow: 1px 0.5px 6px 1px rgb(0, 0, 0.25);
+        font-weight: $font-5th;
+    }
+}
+
+.especs-content{
+    display: grid;
+    row-gap: 0.4rem;
+    list-style: none;
+    color: #fff;
+}
+
+@media (min-width:430px) and (max-width:750px) {
+
+    /* Buy section */
+
+    .buy-container{
+        display: flex;
+        flex-direction: column;
+        width: 430px;
+
+        border-radius: 0.2rem;
+    }
+
+    .buy-images__main{
+        width: 380px;
+    }
+
+    .buy-images__secondary{
+        width: 117px;
+    }
+
+    .buy-info__title-top{
+        font-size: 0.9rem;
+    }
+
+    .buy-info{
+        display: grid;
+        width: 350px;
+
+        &__title{
+            width: 350px;
+            font-size: 1.5rem;
+        }
+
+        &__price{
+            font-size: 1.3rem;
+        }
+
+        &__price-discont{
+            font-size: 1.5rem;
+        }
+
+        &__cuotes{
+            font-size: 1.1rem;
+            padding-bottom: 0.5rem;
+            border: none;
+        }
+
+        &__stock{
+            margin: 0;
+            font-size: 1rem;
+        }
+
+        &__guarantee{
+            margin: 0;
+            font-size: 1rem;
+        }
+
+        &__shipping{
+            padding: 0;
+            border: none;
+            font-size: 1rem;
+        }
+
+        &__button{
+            font-size: 0.8rem;
+            width: 155px;
+            padding: 0.5rem;
+            white-space: nowrap;
+        }
+    }
+
+    .especs-container{
+            display: grid;
+            width: 390px;
+            padding: 0.5rem;
+        }
+
+        .especs-main-title{
+            font-size: 1.7rem;
+        }
+
+        .especs-title{
+            font-size: 1.2rem;
+        }
+
+        .especs-info{
+            width: 180px;
+        }
+}
+
+@media (min-width:750px) and (max-width:1350px){
+
+    .buy-container{
+        width: 780px;
+    }
+
+    .buy-images__main{
+        width: 350px;
+    }
+
+    .buy-images__secondary{
+        width: 107px;
+    }
+
+    .buy-info__title-top{
+        font-size: 1rem;
+    }
+
+    .buy-info{
+        gap: 0;
+
+        &__title{
+        font-size: 1.5rem;
+        width: 300px;
+        }
+
+        &__price{
+            font-size: 1.2rem;
+        }
+
+        &__price-discont{
+            font-size: 1.3rem;
+        }
+
+        &__cuotes{
+            font-size: 1rem;
+        }
+
+        &__view-cuotes{
+            font-size: 0.7rem;
+        }
+
+        &__stock{
+            font-size: 1rem;
+        }
+
+        &__guarantee{
+            font-size: 1rem;
+        }
+
+        &__shipping{
+            font-size: 1rem;
+            padding-bottom: 0.5rem;
+        }
+
+        &__button{
+            font-size: 0.9rem;
+            padding: 0rem;
+            width: 115px;
+        }
+    }
+
+    .especs-container{
+        grid-template-columns: repeat(2, 360px);
+        width:750px;
+    }
+    
+    .especs-info{
+        width: 365px;
+
+        &3{
+            width: 750px;
+        }
+
+        &4{
+            width: 750px;
+        }
+    }
+
+}

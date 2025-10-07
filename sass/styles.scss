@@ -1,4 +1,10 @@
-//Import reset.
+//Import reset y tipografias.
 @use "base/reset" as *;
-// Import home.
+@use "base/typography" as *;
+
+// Import pages.
 @use "layout/home" as *;
+@use "layout/placas-de-video" as *;
+@use "layout/article-section" as *;
+@use "layout/armatupc" as *;
+@use "layout/faq" as *;
