@@ -5,7 +5,7 @@
   padding: 0;
   border: 0;
   box-sizing: border-box;
-  font-family: montserrat;
+  font-family: Montserrat;
 }
 
 /* Fonts */
@@ -202,10 +202,10 @@ body {
   font-size: 0.7rem;
 }
 .articles-name {
-  font-size: 1rem;
+  font-size: 1.3rem;
   font-weight: 600;
   color: #ededed;
-  width: 150px;
+  width: 220px;
   height: auto;
   margin: 1rem, 0;
 }
@@ -214,10 +214,12 @@ body {
   text-decoration: line-through;
   font-weight: 400;
   margin-top: 0.5rem;
+  font-size: 1.2rem;
 }
 .articles-price__discont {
   color: #ca2323;
   font-weight: 600;
+  font-size: 1.4rem;
 }
 
 .articles-container {
@@ -311,6 +313,7 @@ body {
 .resigns-name {
   font-weight: 600;
   color: #ab9f9f;
+  white-space: nowrap;
 }
 .resigns-rating {
   color: #ca2323;
@@ -402,6 +405,7 @@ footer {
 .footer-copyright__content {
   color: #fff;
   font-weight: 400;
+  font-size: 1.1rem;
 }
 
 /* Media queries (home) */
@@ -411,6 +415,7 @@ footer {
   .header-container {
     position: sticky;
     top: 0;
+    height: 70px;
   }
   .header-left__img {
     width: 125px;
@@ -472,9 +477,12 @@ footer {
   }
   .articles-name {
     font-size: 0.7rem;
+    width: 100%;
+    margin: 0;
   }
   .articles-price__original {
     font-size: 0.7rem;
+    margin: 0.5rem 0 0 0;
   }
   .articles-price__discont {
     font-size: 0.8rem;
@@ -506,13 +514,13 @@ footer {
   }
   .resigns-container {
     width: 180px;
-    height: 350px;
+    height: 400px;
     padding: 2rem;
     gap: 0;
   }
   .resigns-container2 {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     gap: 0;
     width: 320px;
@@ -523,6 +531,7 @@ footer {
   }
   .resigns-name {
     font-size: 1.5rem;
+    white-space: wrap;
   }
   .resigns-name2 {
     font-size: 1.5rem;

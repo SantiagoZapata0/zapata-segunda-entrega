@@ -148,9 +148,9 @@ body{
     }
 
     &-name{
-        @include font-style(1rem, 600);
+        @include font-style(1.3rem, 600);
         color: #ededed;
-        @include medidas (150px, auto);
+        @include medidas (220px, auto);
         margin: 1rem, 0
     }
 
@@ -159,11 +159,13 @@ body{
         text-decoration: line-through;
         font-weight: 400;
         margin-top: 0.5rem;
+        font-size: 1.2rem;
     }
 
     &-price__discont{
         color: $main-color;
         font-weight: 600;
+        font-size: 1.4rem
     }
 }
 
@@ -251,6 +253,7 @@ body{
     &-name{
         font-weight: 600;
         color: #ab9f9f;
+        white-space: nowrap;
     }
 
     &-rating{
@@ -337,6 +340,7 @@ footer{
     &__content{
         color: #fff;
         font-weight: $font-4th;
+        font-size: 1.1rem;
     }
 }
 
@@ -351,6 +355,7 @@ footer{
     .header-container{
         position: sticky;
         top: 0;
+        height: 70px;
     }
 
     .header-left__img{
@@ -420,10 +425,13 @@ footer{
 
         &-name{
             font-size: 0.7rem;
+            width: 100%;
+            margin: 0;
         }
 
         &-price__original{
             font-size: 0.7rem;
+            margin: 0.5rem 0 0 0;
         }
 
         &-price__discont{
@@ -459,12 +467,12 @@ footer{
     }
 
     .resigns-container{
-        @include medidas (180px, 350px);
+        @include medidas (180px, 400px);
         padding: 2rem;
         gap: 0;
 
         &2{
-            @include flex (flex, column, center, 0);
+            @include flex (flex, row, center, 0);
             @include medidas (320px, 220px);
             justify-self: center;
             grid-column: 1/3;
@@ -474,6 +482,7 @@ footer{
 
     .resigns-name{
         font-size: 1.5rem;
+        white-space: wrap;
 
         &2{
             font-size: 1.5rem;
